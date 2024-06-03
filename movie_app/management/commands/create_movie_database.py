@@ -7,9 +7,9 @@ import time
 class Command(BaseCommand):
     help = 'create a movie database which contains appr. 10000 movie from https://www.themoviedb.org/ API'
 
-    api_read_token = "" # write your api read token here.
+    api_read_token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0Y2EzZTQzNmI2ODI3ZWIzZWM2ZDc1MDljMGM0ZDIyMCIsInN1YiI6IjY2NWMxOWU4ZDhhODk5NzgyOTg4MWE1OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.c0530K2kn6qoI2pNjseJyoZv9u2i-3ahVwG2aFtou2Q" # write your api read token here.
 
-    api_key = "" # write your api key here.
+    api_key = "4ca3e436b6827eb3ec6d7509c0c4d220" # write your api key here.
 
     def get_all_genres(self):
         url = f'https://api.themoviedb.org/3/genre/movie/list?api_key={self.api_key}'
